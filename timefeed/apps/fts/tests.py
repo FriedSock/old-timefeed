@@ -16,11 +16,18 @@ class AdminSiteTest(LiveServerTestCase):
         self.browser.quit()
 
     def test_can_access_admin_and_login(self):
+        """
+        Checks if we can access and login to the admin app. 
+
+        The goal of this test is to simply check if we have setup the admin
+        app correctly.
+        """
         login_page_title            = 'Django administration'
         login_success_page_title    = 'Site administration'
+        admin_site_address          = '/admin/'
 
         # Open the browser and check we are on the login screen.
-        self.browser.get(self.live_server_url + '/admin/')
+        self.browser.get(self.live_server_url + admin_site_address) 
 
         body = self.browser.find_element_by_tag_name('body')
         self.assertIn(login_page_title, body.text)
