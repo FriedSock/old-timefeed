@@ -1,0 +1,20 @@
+[
+  {
+    "pk": 1,
+    "model": "auth.user",
+    "fields": {
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2012-09-04T14:43:51.621Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$10000$jn0eG41uYCWc$tkPsvBw1vHri1Aoges4wRbgmsohDKNhgqMAoyQgIMiY=",
+      "email": "admin@timefeed.com",
+      "date_joined": "2012-09-04T14:16:35.423Z"
+    }
+  }
+]
